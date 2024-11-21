@@ -29,14 +29,23 @@ namespace Práctica_2
             textoTelegrama = txtTelegrama.Text;
 
             // Telegrama Urgente?
-            if (chkUrgente.Checked)
+          
+        {
+            // Asumimos que tienes 2 RadioButtons: radioBtn1 (Ordinario) y radioBtn2 (Urgente)
+            if (radioBtn2.Checked)
             {
                 tipoTelegrama = 'u';
             }
+            else
+            {
+                tipoTelegrama = 'o';
+            }
 
-            // Obtengo el número de palabras que forma el telegrama
-            
-            numPalabras = textoTelegrama.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
+                // Ejemplo: Actualizar un Label con el tipo de telegrama
+                numPalabras = textoTelegrama.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
+             
+        }
+
 
 
             // Si el telegrama es ordinario
