@@ -53,11 +53,11 @@ namespace Práctica_2
             {
                 if (numPalabras <= 10)
                 {
-                    coste = 2.5;
+                    coste = 3;
                 }
                 else
                 {
-                    coste = 2.5 + 0.5 * (numPalabras - 10); // Modificado para sumar al coste base
+                    coste = 3 + 0.5 * (numPalabras - 10); // Modificado para sumar al coste base
                 }
             }
             else
@@ -65,11 +65,11 @@ namespace Práctica_2
                 // Si el telegrama es urgente
                 if (numPalabras <= 10)
                 {
-                    coste = 5;
+                    coste = 6;
                 }
                 else
                 {
-                    coste = 5 + 0.75 * (numPalabras - 10);
+                    coste = 6 + 0.75 * (numPalabras - 10);
                 }
             }
 
